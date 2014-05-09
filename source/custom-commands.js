@@ -911,11 +911,7 @@ target.toLowerCase().replace(/ /g,'-');
 	        this.sendReply('Reloading utilities.js...');
 	        CommandParser.uncacheTree('./source/utilities.js');
 	        Utilities = require('./utilities.js').Utilities;
-
-	        this.sendReply('Reloading bot.js...');
-	        CommandParser.uncacheTree('./source/bot.js');
-	        global.botCommands = require('./bot.js').botCommands;
-
+	        
 	        this.sendReply('Reloading io.js...');
 	        CommandParser.uncacheTree('./source/io.js');
 	        io = require('./io.js');
